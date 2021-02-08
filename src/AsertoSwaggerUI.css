@@ -1,0 +1,436 @@
+/* MARGINS and PADDING */
+
+/* remove the big margins */
+.swagger-ui .wrapper {
+  margin-left: 0px !important;
+}
+
+/* BUTTONS and SELECTS */
+
+/* disable focus outline for buttons and selects */
+.swagger-ui button:focus {
+  outline: none;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.swagger-ui select:focus {
+  outline: none;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.swagger-ui input:focus {
+  outline: none;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.swagger-ui textarea:focus, .swagger-ui textarea:focus {
+  outline: none;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* change the style of a select box */
+.swagger-ui select,
+.swagger-ui option {
+  height: 36px;
+  border: 1px solid #d7d8d8;
+  border-radius: 4px;
+  background-color: #35393d00;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  color: #d7d8d8;
+  text-decoration: none solid rgb(215, 216, 216);  
+  appearance: none;
+}
+
+/* INFORMATION CONTAINER */
+
+/* remove all padding */
+.swagger-ui .information-container.wrapper {
+  padding: 0px !important;
+}
+
+/* remove the large top/bottom margins from the info section */
+.swagger-ui .information-container.wrapper .info {
+  /* left and right are 5px, because container already provides 15px */
+  margin: 20px 5px 10px 5px;
+}
+
+/* replace the font for the "Aserto Developer Edge" title */
+.swagger-ui .information-container.wrapper h2.title {
+  font-family: Roboto;
+  font-size: 24px;
+  color: #d7d8d8;
+  text-decoration: none solid rgb(215, 216, 216);
+  line-height: 32px;  
+  margin-bottom: 10px;
+}
+
+/* move and restyle the version bubble */
+.swagger-ui .info .title small {
+  vertical-align: middle;
+  border-radius: 36px;
+  background-color: #35393d;
+  background-size: cover;
+  line-height: 24px;
+  text-align: center;
+  top: -2px;
+  margin-left: 20px;
+}
+.swagger-ui .info .title small pre.version {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  color: #d7d8d8;
+  text-decoration: none solid rgb(215, 216, 216);
+  padding: 3px;
+}
+
+/* LINKS */
+
+/* make the swagger links teal */
+.information-container.wrapper a, 
+.information-container.wrapper a:hover, 
+.information-container.wrapper span.url {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #48a4a7;
+  text-decoration: none solid rgb(72, 164, 167);
+  line-height: 22px;
+}
+
+/* add the 'external link' symbol after a link */
+.information-container.wrapper a:after {
+  content: url('../assets/new-tab.svg');
+  margin-left: 10px;
+}
+
+/* SCHEMES SECTION */
+
+/* replace the 'schemes' title font and color */
+a.nostyle span, span.schemes-title {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #d7d8d8;
+}
+
+/* override the background of the "schemes" container */
+.swagger-ui .scheme-container {
+  background-color: #1e212366 !important;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #35393d;
+}
+
+/* OPERATION BLOCK HEADINGS */
+
+/* restyle the bottom border of the operation section heading */
+.swagger-ui h4.opblock-tag.no-desc {
+  padding: 20px 0px 10px 0px;
+  border-bottom: 1px solid #35393d;
+  margin-bottom: 20px;
+}
+
+/* change the base font for the operation section spans */
+.swagger-ui h4.opblock-tag.no-desc span {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 600;
+  color: #d7d8d8;
+  text-decoration: none solid rgb(215, 216, 216);
+  line-height: 32px;  
+}
+
+/* override background color of operation section header */
+/* THIS WILL BE OVERRIDDEN LATER */
+.swagger-ui .opblock .opblock-section .opblock-section-header {
+  background-color: #1e2123;
+  box-shadow: 0 1px 2px rgb(0,0,0 / 50%) !important;
+}
+
+/* OPERATION BLOCKS */
+
+.swagger-ui .opblock span.opblock-summary-method {
+  min-width: 90px;
+}
+
+/* override font of URL path in operation description */
+.swagger-ui .opblock-summary-path a.nostyle span {
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* override font for operation body heading */
+.swagger-ui .opblock .opblock-body h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #d7d8d8;
+  text-decoration: none solid rgb(215, 216, 216);
+}
+
+/* override the font for operation details */
+.swagger-ui .opblock .opblock-body span,
+.swagger-ui .opblock .opblock-body th,
+.swagger-ui .opblock .opblock-body td,
+.swagger-ui .opblock .opblock-body p {
+  font-family: Roboto;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none solid rgb(255, 255, 255);
+}
+
+/* override the font for operation inner details */
+.swagger-ui .opblock .opblock-body td div,
+.swagger-ui .opblock .opblock-body h5 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none solid rgb(255, 255, 255);
+}
+
+/* override the color of the "required" superscript */
+.swagger-ui .opblock .opblock-body .parameter__name.required:after {
+  color: orange;
+}
+
+/* override the style of the buttons (e.g. "try it out" button) */
+.swagger-ui button.btn {
+  height: 36px;
+  min-width: 110px;
+  border: 1px solid #d7d8d8;
+  border-radius: 4px;
+  background-size: cover;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  color: #d7d8d8;
+  text-decoration: none solid rgb(215, 216, 216);
+  text-align: center;  
+}
+
+/* override the "cancel" button style */
+.swagger-ui button.btn.cancel {
+  border-color: #d7d8d8;
+  color: #d7d8d8;
+  width: 110px !important;
+  text-align: center;  
+}
+
+/* override the "execute" button style */
+.swagger-ui button.btn.execute {
+  border-color: #d7d8d8;
+  color: #d7d8d8;
+  background-color: #00000000;
+  text-align: center;  
+}
+
+/* Request URL box */
+.swagger-ui .opblock-body pre.microlight {
+  background-color: rgb(29, 31, 33);
+  color: #d7d8d8;  
+}
+
+/* change the background of the schemes select-box */
+.swagger-ui .scheme-container select {
+  background-color: #35393d;
+  border: 1px solid #35393d;
+  color: #d7d8d8;
+}
+
+.swagger-ui .scheme-container select:hover {
+  background-color: #585f66;
+  border: 1px solid #35393d;
+  color: #ffffff;
+}
+
+/* add a down-arrow chevron for each expanded section */
+.swagger-ui div.is-open button.expand-operation:after {
+  content: url('../assets/Down-arrow.svg');
+}
+
+/* add a right-arrow chevron for each collapsed section */
+.swagger-ui div button.expand-operation:after {
+  content: url('../assets/Right-arrow.svg');
+}
+
+/* make the chevron in a select box white */
+/* doesn't work
+.swagger-ui .scheme-container option:after {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  color: #d7d8d8;
+  content: '>';
+  transform: rotate(90deg);
+}
+*/
+
+/* darken the section header background */
+.swagger-ui .opblock .opblock-section-header {
+  background-color: #1e2123;
+}
+
+/* remove the bright bottom border line from the operation bock summary */
+.swagger-ui .opblock.is-open .opblock-summary {
+  border-bottom: 0px;
+}
+
+/* make the links inside an operation body white and underlined on hover */
+.opblock-body a {
+  color: #ffffff;
+}
+.opblock-body a:hover {
+  color: #ffffff;
+  text-decoration: underline solid white;
+}
+
+/* add the 'external link' symbol after an external link */
+.opblock-body .opblock-external-docs a:after {
+  content: url('../assets/new-tab.svg');
+  margin-left: 10px;
+}
+
+/* POST/GET/DELETE/PUT adjustments */
+
+/* adjust background colors of POST */
+
+.swagger-ui .opblock.opblock-post {
+  border-width: 1;
+  border-color: #347559;
+  background-color: #2D5F4B;
+}
+
+.swagger-ui .opblock.opblock-post .opblock-section-header {
+  border-width: 0;
+  background-color: #0000; /* make transparent */
+  box-shadow: 0 1px 2px rgb(0,0,0 / 50%) !important; /* not working */
+  border-top: 1px solid #347559;
+  border-bottom: 1px solid #347559;
+}
+
+.swagger-ui .opblock.opblock-post th,
+.swagger-ui .opblock.opblock-post .responses-header td {
+  border-bottom: 1px solid #347559;
+}
+
+.swagger-ui .opblock.opblock-post span.opblock-summary-method {
+  background-color: #50cd92;
+  color: #111111;
+}
+
+/* adjust background colors of GET */
+
+.swagger-ui .opblock.opblock-get {
+  border-width: 1;
+/*  border-color: #61affe30;
+  background-color: #61affe7f;*/
+  border-color: #436a8c;
+  background-color: #365672;
+}
+
+.swagger-ui .opblock.opblock-get .opblock-section-header {
+  border-width: 0;
+  background-color: #0000; /* make transparent */
+  box-shadow: 0 1px 2px rgb(0,0,0 / 50%) !important; /* not working */
+  border-top: 1px solid #41698d;
+  border-bottom: 1px solid #436a8c;
+}
+
+.swagger-ui .opblock.opblock-get th,
+.swagger-ui .opblock.opblock-get .responses-header td {
+  border-bottom: 1px solid #436a8c;
+}
+
+.swagger-ui .opblock.opblock-get span.opblock-summary-method {
+  background-color: #65b1fb;
+  color: #111111;
+}
+
+/* adjust background colors of DELETE */
+
+.swagger-ui .opblock.opblock-delete {
+  border-width: 1;
+  border-color: #69170d;
+  background-color: #491714;
+}
+
+.swagger-ui .opblock.opblock-delete .opblock-section-header {
+  border-width: 0;
+  background-color: #0000; /* make transparent */
+  box-shadow: 0 1px 2px rgb(0,0,0 / 50%) !important; /* not working */
+  border-top: 1px solid #69170d;
+  border-bottom: 1px solid #69170d;
+}
+
+.swagger-ui .opblock.opblock-delete th,
+.swagger-ui .opblock.opblock-delete .responses-header td {
+  border-bottom: 1px solid #69170d;
+}
+
+.swagger-ui .opblock.opblock-delete span.opblock-summary-method {
+  background-color: #991602;
+  color: #ffffff;
+}
+
+/* adjust background colors of PUT */
+
+.swagger-ui .opblock.opblock-put {
+  border-width: 1;
+  border-color: #895e32;
+  background-color: #6e4e2e;
+}
+
+.swagger-ui .opblock.opblock-put .opblock-section-header {
+  border-width: 0;
+  background-color: #0000; /* make transparent */
+  box-shadow: 0 1px 2px rgb(0,0,0 / 50%) !important; /* not working */
+  border-top: 1px solid #895e32;
+  border-bottom: 1px solid #895e32;
+}
+
+.swagger-ui .opblock.opblock-put th,
+.swagger-ui .opblock.opblock-put .responses-header td {
+  border-bottom: 1px solid #895e32;
+}
+
+.swagger-ui .opblock.opblock-put span.opblock-summary-method {
+  background-color: #f6a03f;
+  color: #111111;
+}
+
+/* adjust styling of input textarea for body of requests */
+.swagger-ui textarea {
+  border: 1px solid #35393d;  
+  border-radius: 4px;
+  background-color: rgb(29, 31, 33);
+  font-size: 14px;
+  color: #d7d8d8;
+  text-decoration: none solid rgb(215, 216, 216);    
+}
+
+/* override curl command font back to monospace */
+.swagger-ui .opblock .opblock-body pre.curl.microlight .language-bash span {
+  font-family:'Ubuntu mono', monospace;
+}
+
+/* override response body font back to monospace */
+.swagger-ui .opblock .opblock-body pre.microlight span {
+  font-family:'Ubuntu mono', monospace;
+}
+
+.swagger-ui td input[type=text] {
+  border: 1px solid #35393d;  
+  border-radius: 4px;
+  background-color: #1e2123;
+  font-size: 14px;
+  color: #d7d8d8;
+  text-decoration: none solid rgb(215, 216, 216);    
+}

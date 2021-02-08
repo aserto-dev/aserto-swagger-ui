@@ -1,0 +1,43 @@
+{
+  "name": "@aserto/aserto-swagger-ui",
+  "version": "0.1.0",
+  "description": "Aserto Swagger-UI React component",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "cross-env NODE_ENV=production babel ./src --out-dir ./dist -s inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aserto-dev/aserto-swagger-ui.git"
+  },
+  "files": [
+    "src/*",
+    "dist/*"
+  ],
+  "homepage": "https://github.com/aserto-dev/aserto-swagger-ui#readme",
+  "keywords": [
+    "aserto",
+    "authorization",
+    "react",
+    "swagger",
+    "swagger-ui"
+  ],
+  "author": "Aserto",
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "dependencies": {
+    "core-js": "3",
+    "swagger-ui": "^3.42.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "cross-env": "5.2.0",
+    "react": "^16.14.0"
+  }
+}
