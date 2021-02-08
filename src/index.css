@@ -253,12 +253,12 @@ a.nostyle span, span.schemes-title {
 
 /* add a down-arrow chevron for each expanded section */
 .swagger-ui div.is-open button.expand-operation:after {
-  content: url('../assets/Down-arrow.svg');
+  content: url('./assets/Down-arrow.svg');
 }
 
 /* add a right-arrow chevron for each collapsed section */
 .swagger-ui div button.expand-operation:after {
-  content: url('../assets/Right-arrow.svg');
+  content: url('./assets/Right-arrow.svg');
 }
 
 /* make the chevron in a select box white */
@@ -294,7 +294,7 @@ a.nostyle span, span.schemes-title {
 
 /* add the 'external link' symbol after an external link */
 .opblock-body .opblock-external-docs a:after {
-  content: url('../assets/new-tab.svg');
+  content: url('./assets/new-tab.svg');
   margin-left: 10px;
 }
 
