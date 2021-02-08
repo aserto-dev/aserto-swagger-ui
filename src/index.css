@@ -106,7 +106,7 @@
 
 /* add the 'external link' symbol after a link */
 .information-container.wrapper a:after {
-  content: url('../assets/new-tab.svg');
+  content: url('./assets/new-tab.svg');
   margin-left: 10px;
 }
 
