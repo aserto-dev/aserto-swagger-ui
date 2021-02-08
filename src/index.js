@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import SwaggerUI from 'swagger-ui'
 import 'swagger-ui/dist/swagger-ui.css'
-import './AsertoSwaggerUI.css'
+import './index.css'
 
 const AsertoSwaggerUI = ({url}) => {
   useEffect(() => {
