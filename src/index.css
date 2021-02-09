@@ -11,7 +11,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #161719;
-  color: #8a959f
+  color: #8a959f;
+  line-height: 1.5em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,6 +31,12 @@ a {
 }
 a:hover {
   color: #48a4a7
+}
+
+/* BOOTSTRAP */
+
+*, :after, :before {
+  box-sizing: border-box;
 }
 
 /* MARGINS and PADDING */
