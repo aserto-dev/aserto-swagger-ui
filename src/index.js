@@ -3,7 +3,7 @@ import SwaggerUI from 'swagger-ui'
 import 'swagger-ui/dist/swagger-ui.css'
 import './index.css'
 
-const AsertoSwaggerUI = ({url}) => {
+const AsertoSwaggerUI = ({url, ...props}) => {
   useEffect(() => {
     SwaggerUI({ 
       dom_id: '#aserto-swagger-ui',
@@ -18,7 +18,7 @@ const AsertoSwaggerUI = ({url}) => {
 
   return (
     <>
-      <div id='aserto-swagger-ui' />
+      <div id='aserto-swagger-ui' {...props} />
     </>
   )
 }
