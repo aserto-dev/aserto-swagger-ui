@@ -86,7 +86,7 @@ a:hover {
   font-weight: 400;
   font-size: 14px;
   color: #d7d8d8;
-  text-decoration: none solid rgb(215, 216, 216);  
+  text-decoration: none solid rgb(215, 216, 216);
   appearance: none;
 }
 
@@ -109,7 +109,7 @@ a:hover {
   font-size: 24px;
   color: #d7d8d8;
   text-decoration: none solid rgb(215, 216, 216);
-  line-height: 32px;  
+  line-height: 32px;
   margin-bottom: 10px;
 }
 
@@ -136,8 +136,8 @@ a:hover {
 /* LINKS */
 
 /* make the swagger links teal */
-.information-container.wrapper a, 
-.information-container.wrapper a:hover, 
+.information-container.wrapper a,
+.information-container.wrapper a:hover,
 .information-container.wrapper span.url {
   font-family: Roboto;
   font-size: 16px;
@@ -185,7 +185,7 @@ a.nostyle span, span.schemes-title {
   font-weight: 600;
   color: #d7d8d8;
   text-decoration: none solid rgb(215, 216, 216);
-  line-height: 32px;  
+  line-height: 32px;
 }
 
 /* override background color of operation section header */
@@ -255,7 +255,7 @@ a.nostyle span, span.schemes-title {
   font-weight: 400;
   color: #d7d8d8;
   text-decoration: none solid rgb(215, 216, 216);
-  text-align: center;  
+  text-align: center;
 }
 
 /* override the "cancel" button style */
@@ -263,7 +263,7 @@ a.nostyle span, span.schemes-title {
   border-color: #d7d8d8;
   color: #d7d8d8;
   width: 110px !important;
-  text-align: center;  
+  text-align: center;
 }
 
 /* override the "execute" button style */
@@ -271,13 +271,13 @@ a.nostyle span, span.schemes-title {
   border-color: #d7d8d8;
   color: #d7d8d8;
   background-color: #00000000;
-  text-align: center;  
+  text-align: center;
 }
 
 /* Request URL box */
 .swagger-ui .opblock-body pre.microlight {
   background-color: rgb(29, 31, 33);
-  color: #d7d8d8;  
+  color: #d7d8d8;
 }
 
 /* change the background of the schemes select-box */
@@ -293,15 +293,15 @@ a.nostyle span, span.schemes-title {
   color: #ffffff;
 }
 
-/* add a down-arrow chevron for each expanded section */
-.swagger-ui div.is-open button.expand-operation:after {
-  content: url('./assets/Down-arrow.svg');
-}
+/*!* add a down-arrow chevron for each expanded section *!*/
+/*.swagger-ui div.is-open button.expand-operation:after {*/
+/*  content: url('./assets/Down-arrow.svg');*/
+/*}*/
 
-/* add a right-arrow chevron for each collapsed section */
-.swagger-ui div button.expand-operation:after {
-  content: url('./assets/Right-arrow.svg');
-}
+/*!* add a right-arrow chevron for each collapsed section *!*/
+/*.swagger-ui div button.expand-operation:after {*/
+/*  content: url('./assets/Right-arrow.svg');*/
+/*}*/
 
 /* make the chevron in a select box white */
 /* doesn't work
@@ -450,12 +450,12 @@ a.nostyle span, span.schemes-title {
 
 /* adjust styling of input textarea for body of requests */
 .swagger-ui textarea {
-  border: 1px solid #35393d;  
+  border: 1px solid #35393d;
   border-radius: 4px;
   background-color: rgb(29, 31, 33);
   font-size: 14px;
   color: #d7d8d8;
-  text-decoration: none solid rgb(215, 216, 216);    
+  text-decoration: none solid rgb(215, 216, 216);
 }
 
 /* override curl command font back to monospace */
@@ -469,10 +469,14 @@ a.nostyle span, span.schemes-title {
 }
 
 .swagger-ui td input[type=text] {
-  border: 1px solid #35393d;  
+  border: 1px solid #35393d;
   border-radius: 4px;
   background-color: #1e2123;
   font-size: 14px;
   color: #d7d8d8;
-  text-decoration: none solid rgb(215, 216, 216);    
+  text-decoration: none solid rgb(215, 216, 216);
+}
+
+.swagger-ui .expand-methods svg, .swagger-ui .expand-operation svg {
+  display: none !important;
 }
